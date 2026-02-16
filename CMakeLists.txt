@@ -27,7 +27,7 @@ enable_testing()
 
 # ===== 本体 =====
 # main.cpp から実行ファイル main を作る
-add_executable(main main.cpp)
+add_executable(main main.cpp ring_buffer.cpp)
 
 # この実行ファイル専用のコンパイルオプション Wall(一般警告), Wextra(追加警告), Werror(警告をエラー扱い), Pedantic(規格厳守)
 target_compile_options(main PRIVATE
